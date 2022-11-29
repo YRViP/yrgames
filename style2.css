@@ -1,0 +1,99 @@
+@media (max-width: 991px) {
+    .section-center {
+        flex-direction: column !important;
+    }
+
+    .section-center-1 {
+        width: 85vw;
+    }
+
+    #slideshow {
+        width: 75vw;
+    }
+
+    .slide {
+        width: 75vw;
+    }
+
+    .slide-wrapper {
+     
+        /* Calculate the total width on the
+          basis of number of slides */
+          width: calc(75vw * 4);
+         
+        /* Specify the animation with the
+          duration and speed */
+          animation: slide 10s ease infinite;
+        }
+         
+        /* Set the background color
+        of each of the slides */
+        .slide:nth-child(1) {
+          background: transparent;
+        }
+         
+        .slide:nth-child(2) {
+          background: transparen;
+        }
+         
+        .slide:nth-child(3) {
+          background: transparent;
+        }
+         
+        .slide:nth-child(4) {
+          background: transparent;
+        }
+         
+        /* Define the animation
+        for the slideshow */
+        @keyframes slide {
+           
+        /* Calculate the margin-left for
+          each of the slides */
+          20% {
+            margin-left: 0px;
+          }
+         
+          40% {
+            margin-left: calc(-75vw * 1);
+          }
+         
+          60% {
+            margin-left: calc(-75vw * 2);
+          }
+         
+          80% {
+            margin-left: calc(-75vw * 3);
+          }
+        }
+
+        .slide a img {
+            width: 80vw;
+        }
+
+    }
+
+    @media (max-width: 866px) {
+        .section-center-1-1 {
+            flex-direction: column;
+        }
+
+        .section-center-1-2 {
+            font-size: 2.5vw;
+            width: 100%;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        #slideshow {
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 2.5vw;
+            margin-top: -10px;
+        }
+
+    }
+
